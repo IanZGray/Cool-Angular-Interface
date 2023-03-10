@@ -9,10 +9,12 @@ import { heroUsers, heroPlus, heroSquaresPlus, heroMagnifyingGlassPlus, heroChar
 import { heroCurrencyDollarSolid, heroEnvelopeSolid, heroGlobeAltSolid, heroChatBubbleLeftRightSolid, heroClockSolid } from '@ng-icons/heroicons/solid';
 import { jamBatteryThreeQuartersF } from '@ng-icons/jam-icons';
 import { ionColorPalette, ionImage } from '@ng-icons/ionicons';
+import { IconComponent } from './icon/icons.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    IconComponent
   ],
   imports: [
     BrowserModule,
@@ -20,6 +22,6 @@ import { ionColorPalette, ionImage } from '@ng-icons/ionicons';
     NgIconsModule.withIcons({ heroUsers, heroCurrencyDollarSolid, heroEnvelopeSolid, heroGlobeAltSolid, heroPlus, heroChatBubbleLeftRightSolid, heroClockSolid, heroSquaresPlus, heroMagnifyingGlassPlus,jamBatteryThreeQuartersF, heroChartBar, ionColorPalette, ionImage, heroMap, heroXCircle, }),
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent, IconComponent]
 })
 export class AppModule { }

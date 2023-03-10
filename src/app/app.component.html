@@ -30,13 +30,6 @@
       </ng-icon>
     </div>
 
-    <!-- <ng-icon
-      *ngFor="let button of buttonArray"
-      name="{{button}}"
-      class="{{buttonClass}} {{iconColor}} {{iconShape}}"
-      (click)="openLink(button)"
-    ></ng-icon> -->
-
     <ng-icon
       *ngFor="let objs of buttonArray"
       name="{{objs}}"
@@ -50,93 +43,11 @@
       class="{{buttonClass}} {{iconColor}} {{iconShape}}"
       (click)="operateWindow()"
     ></ng-icon>
-    <!-- <ng-icon
-      name="heroSquaresPlus"
-      class="{{buttonClass}} {{iconColor}} {{iconShape}}"
-      (click)="updateIcons()"
-    ></ng-icon> -->
-    <!-- testing -->
+
+<!-- all the apps -->
 
 
-    <section
-      class="flex justify-center"
-    >
-
-      <div
-        id="heroUsers"
-        class="{{appDisplayClass}}"
-        style="background-color: black; width: 250px; height:auto; position: absolute; "
-        [style.display]="appHiddenStyle"
-      >
-
-        <section
-          class="flex flex-col"
-        >
-        <span
-          class="flex justify-end"
-        >
-          <ng-icon
-            name="heroXCircle"
-            class="text-2xl"
-            (click)="appWindowToggle('heroUsers')"
-          >
-          </ng-icon>
-        </span>
-          <span
-            style="text-align: left"
-          >
-            Icon Shape
-          </span>
-          <span
-            style="width: 200px"
-          >
-            <ng-icon
-              (click)="updateIconShape('rounded-full')"
-              name="heroPlus"
-              class="{{buttonClass}} bg-black rounded-full"
-            />
-            <ng-icon
-              (click)="updateIconShape('rounded-md')"
-              name="heroPlus"
-              class="{{buttonClass}} bg-black rounded-md"
-            />
-          </span>
-
-          <span
-            style="text-align:left"
-          >
-            Icon Color
-          </span>
-          <span
-            class="flex flex-wrap"
-          >
-            <div
-              (click)="updateIconColor('bg-yellow-600')"
-              class="{{colorClass}} bg-yellow-600"
-            >
-            </div>
-            <div
-              (click)="updateIconColor('bg-blue-300')"
-              class="{{colorClass}} bg-blue-300"
-            >
-            </div>
-            <div
-              (click)="updateIconColor('bg-red-300')"
-              class="{{colorClass}} bg-red-300"
-            >
-            </div>
-            <div
-              (click)="updateIconColor('bg-green-600')"
-              class="{{colorClass}} bg-green-600"
-            >
-            </div>
-          </span>
-
-        </section>
-      </div>
-
-    </section>
-
+<!-- App Bench -->
     <div
       class="{{displayToggle}} bg-black rounded-lg"
     >

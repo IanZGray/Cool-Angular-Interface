@@ -51,17 +51,6 @@ export class AppComponent {
   buttonArrayBench = ['heroChatBubbleLeftRightSolid','heroClockSolid','heroMagnifyingGlassPlus', 'ionColorPalette', 'ionImage', 'heroMap']
 
 
-  testingArray: {icon:string, func:any}[] = [{ icon:'heroUsers', func:(id:string) => {
-    let elm:any = document.getElementById(id);
-    console.log(elm)
-    if(elm.className === 'appHiddenClass') {
-      elm.className = 'appDisplayClass'
-    } else {
-      elm.className = 'appHiddenClass'
-    }
-  } },]
-
-
   operateWindow() {
     if (this.displayToggle === 'hidden') {
       this.displayToggle = 'flex flex-wrap justify-start py-4 px-6'
@@ -78,14 +67,6 @@ export class AppComponent {
     this.buttonArray.push(name)
     this.buttonArrayBench.splice(index , 1)
   }
-
-  // updateIcons() {
-  //   if (this.appDisplay === 'hidden') {
-  //     this.appDisplay = 'flex flex-wrap justify-center py-4 px-6 rounded-md drop-shadow-md'
-  //   } else {
-  //     this.appDisplay = 'hidden'
-  //   }
-  // }
 
   updateIconColor(color:string) {
     this.iconColor = color
