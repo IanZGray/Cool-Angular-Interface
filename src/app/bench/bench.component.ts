@@ -1,35 +1,11 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  selector: 'bench-app',
+  templateUrl: './bench.component.html',
+  styleUrls: ['../app.component.css']
 })
-export class AppComponent {
-  title = 'ios-mimic';
-
-  d = new Date()
-
-  hourCalc(hour:number) {
-    if (hour >12) {
-      let newHour = hour-12
-      return newHour
-    } else {
-      return hour
-    }
-  }
-  amPmCalc(hour:number) {
-    if (hour >12) {
-      return 'PM'
-    } else {
-      return 'AM'
-    }
-  }
-
-  currentDate = `${this.d.getMonth() +1}/${this.d.getDate()}/${this.d.getFullYear().toString().slice(2,4)}`
-  currentTime = `
-  ${this.hourCalc(this.d.getHours())}:${this.d.getMinutes()}`
-  currentAmPm = ` ${this.amPmCalc(this.d.getHours())}`
+export class BenchComponent {
 
   displayToggle:string = 'hidden'
   appDisplay:string = 'hidden'
@@ -51,14 +27,6 @@ export class AppComponent {
   buttonArrayBench = ['heroChatBubbleLeftRightSolid','heroClockSolid','heroMagnifyingGlassPlus', 'ionColorPalette', 'ionImage', 'heroMap']
 
 
-  operateWindow() {
-    if (this.displayToggle === 'hidden') {
-      this.displayToggle = 'flex flex-wrap justify-start py-4 px-6'
-    } else {
-      this.displayToggle = 'hidden'
-    }
-  }
-
   openLink(name:string) {
     console.log(name)
   }
@@ -66,14 +34,6 @@ export class AppComponent {
   add(index:number, name:string) {
     this.buttonArray.push(name)
     this.buttonArrayBench.splice(index , 1)
-  }
-
-  updateIconColor(color:string) {
-    this.iconColor = color
-  }
-
-  updateIconShape(shape:string) {
-    this.iconShape = shape
   }
 
   appWindowToggle(id:string) {

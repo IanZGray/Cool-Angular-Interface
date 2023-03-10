@@ -41,23 +41,14 @@
     <ng-icon
       name="heroSquaresPlus"
       class="{{buttonClass}} {{iconColor}} {{iconShape}}"
-      (click)="operateWindow()"
+      (click)="appWindowToggle('bench')"
     ></ng-icon>
 
 <!-- all the apps -->
 
 
 <!-- App Bench -->
-    <div
-      class="{{displayToggle}} bg-black rounded-lg"
-    >
-      <ng-icon
-        *ngFor="let button of buttonArrayBench; let index = index"
-        name="{{button}}"
-        class="{{buttonBenchClass}} {{iconShape}}"
-        (click)="add(index, button)"
-      ></ng-icon>
-    </div>
+
 
   </div>
 </article>
