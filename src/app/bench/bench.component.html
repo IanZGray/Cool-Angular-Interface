@@ -2,21 +2,25 @@
   id="bench"
   class="flex items-center justify-center"
   style="position: absolute; z-index:10; width: 100%; height: 100%"
-  [style.display]="appHiddenStyle"
+
 >
   <div
-    class="flex text-center flex-wrap content-end justify-start px-2 py-2 text-white"
+    class="flex text-center flex-wrap content-end justify-start px-2 text-white -mt-28"
     style="height:500px; width: 265px"
   >
 
     <div
       class="bg-black rounded-lg p-4"
     >
-      <ng-icon
-        name="heroXCircle"
-        class="text-2xl"
-        (click)="appWindowToggle('heroUsers')"
-      ></ng-icon>
+      <div
+        class="flex flex-col items-end"
+      >
+        <ng-icon
+          name="heroXCircle"
+          class="text-2xl"
+          (click)="appWindowToggle('heroUsers')"
+        ></ng-icon>
+      </div>
       <ng-icon
         *ngFor="let button of buttonArrayBench; let index = index"
         name="{{button}}"
