@@ -1,0 +1,51 @@
+<article
+  id="heroGlobeAltSolid"
+  class="flex items-center justify-center text-gray-700 -my-1"
+  style="position: absolute; z-index:10; width: 100%; height: 100%"
+  [style.display]="appHiddenStyle"
+  >
+
+    <section
+      class="flex justify-center"
+    >
+
+      <div
+        class="{{appDisplayClass}} items-start flex font-semibold text-sm"
+        style="background-color: rgb(223, 221, 218); width: 257px; height:450px; display:flex"
+
+      >
+        <div
+        class="flex justify-end w-full"
+        >
+          <ng-icon
+            name="heroXCircle"
+            class="text-2xl text-white flex"
+            (click)="appWindowToggle('heroGlobeAltSolid')"
+          ></ng-icon>
+        </div>
+
+        <div
+          class="flex flex-col h-full"
+        >
+
+          <h1
+            class="text-center mb-2"
+          >Web Browser</h1>
+
+          <iframe
+            id="browse"
+            src="https://wikipedia.com"
+            height="375" width="250"
+            title="W3Schools Free Online Web Tutorials"
+          >
+          </iframe>
+
+        </div>
+
+    </div>
+
+
+    </section>
+
+
+</article>

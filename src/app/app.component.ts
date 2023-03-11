@@ -46,7 +46,7 @@ export class AppComponent {
   appDisplayStyle:string = 'flex'
   appHiddenStyle:string = 'none'
 
-  buttonArray = ['ionColorPalette', 'ionCalculatorSharp', 'heroEnvelopeSolid','heroCurrencyDollarSolid','heroGlobeAltSolid']
+  buttonArray = ['ionColorPalette', 'ionCalculatorSharp', 'heroClipboardDocumentList','heroEnvelopeSolid','heroCurrencyDollarSolid','heroGlobeAltSolid']
 
   buttonArrayBench = ['heroChatBubbleLeftRightSolid','heroClockSolid','heroMagnifyingGlassPlus', 'heroUsers', 'ionImage', 'heroMap']
 
@@ -81,13 +81,8 @@ export class AppComponent {
     console.log(id)
     if( id === 'heroEnvelopeSolid') {
       var email = "mailto:...";
-      //save here
       window.location.href = email;
-    } else if (id === 'heroCurrencyDollarSolid') {
-      // make this within the browser app when browser app is complete
-      window.open('https://ian-grayfullstackbankingapplication.s3.amazonaws.com/index.html')
-    }
-    else if(elm.style.display === this.appHiddenStyle) {
+    } else if(elm.style.display === this.appHiddenStyle) {
 
       elm.style.display = this.appDisplayStyle
     } else {
