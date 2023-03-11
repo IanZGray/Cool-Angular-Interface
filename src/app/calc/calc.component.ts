@@ -5,10 +5,11 @@ import { Component } from '@angular/core';
   templateUrl: './calc.component.html',
   styleUrls: ['../app.component.css']
 })
-export class calcComponent {
+export class CalcComponent {
   appDisplayClass:string = 'flex-wrap justify-center py-4 px-6 rounded-md drop-shadow-md'
   appDisplayStyle:string = 'flex'
   appHiddenStyle:string = 'none'
+
 
   calValue: number = 0;
   funcT: any = 'Calculate...';

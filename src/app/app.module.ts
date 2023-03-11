@@ -9,16 +9,12 @@ import { heroUsers, heroPlus, heroSquaresPlus, heroMagnifyingGlassPlus, heroChar
 import { heroCurrencyDollarSolid, heroEnvelopeSolid, heroGlobeAltSolid, heroChatBubbleLeftRightSolid, heroClockSolid } from '@ng-icons/heroicons/solid';
 import { jamBatteryThreeQuartersF } from '@ng-icons/jam-icons';
 import { ionColorPalette, ionImage, ionCalculatorSharp } from '@ng-icons/ionicons';
-import { IconComponent } from './icon/icons.component';
-import { BenchComponent } from './bench/bench.component';
-import { calcComponent } from './calc/calc.component';
+import { CalcComponent } from './calc/calc.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    IconComponent,
-    BenchComponent,
-    calcComponent
+    CalcComponent
   ],
   imports: [
     BrowserModule,
@@ -26,6 +22,6 @@ import { calcComponent } from './calc/calc.component';
     NgIconsModule.withIcons({ heroUsers, heroCurrencyDollarSolid, heroEnvelopeSolid, heroGlobeAltSolid, heroPlus, heroChatBubbleLeftRightSolid, heroClockSolid, heroSquaresPlus, heroMagnifyingGlassPlus,jamBatteryThreeQuartersF, heroChartBar, ionColorPalette, ionImage, heroMap, heroXCircle, ionCalculatorSharp, }),
   ],
   providers: [],
-  bootstrap: [AppComponent, IconComponent, BenchComponent, calcComponent ]
+  bootstrap: [AppComponent, CalcComponent ]
 })
 export class AppModule { }

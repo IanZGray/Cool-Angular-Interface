@@ -46,9 +46,9 @@ export class AppComponent {
   appDisplayStyle:string = 'flex'
   appHiddenStyle:string = 'none'
 
-  buttonArray = ['heroUsers', 'ionCalculatorSharp', 'heroCurrencyDollarSolid','heroEnvelopeSolid','heroGlobeAltSolid']
+  buttonArray = ['ionColorPalette', 'ionCalculatorSharp', 'heroEnvelopeSolid','heroCurrencyDollarSolid','heroGlobeAltSolid']
 
-  buttonArrayBench = ['heroChatBubbleLeftRightSolid','heroClockSolid','heroMagnifyingGlassPlus', 'ionColorPalette', 'ionImage', 'heroMap']
+  buttonArrayBench = ['heroChatBubbleLeftRightSolid','heroClockSolid','heroMagnifyingGlassPlus', 'heroUsers', 'ionImage', 'heroMap']
 
 
   operateWindow() {
@@ -78,8 +78,16 @@ export class AppComponent {
 
   appWindowToggle(id:string) {
     let elm:any = document.getElementById(id);
-    console.log(elm)
-    if(elm.style.display === this.appHiddenStyle) {
+    console.log(id)
+    if( id === 'heroEnvelopeSolid') {
+      var email = "mailto:...";
+      //save here
+      window.location.href = email;
+    } else if (id === 'heroCurrencyDollarSolid') {
+      // make this within the browser app when browser app is complete
+      window.open('https://ian-grayfullstackbankingapplication.s3.amazonaws.com/index.html')
+    }
+    else if(elm.style.display === this.appHiddenStyle) {
 
       elm.style.display = this.appDisplayStyle
     } else {

@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'icon-app',
@@ -6,6 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['../app.component.css']
 })
 export class IconComponent {
+
 
   displayToggle:string = 'hidden'
   appDisplay:string = 'hidden'
@@ -32,7 +33,7 @@ export class IconComponent {
 
   appWindowToggle(id:string) {
     let elm:any = document.getElementById(id);
-    console.log(elm)
+
     if(elm.style.display === this.appHiddenStyle) {
 
       elm.style.display = this.appDisplayStyle
