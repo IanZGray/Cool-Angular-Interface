@@ -35,12 +35,12 @@ export class AppComponent {
   appDisplay:string = 'hidden'
   appName:string = ''
 
-  iconColor:string = 'bg-yellow-600'
+  iconColor:string = 'bg-green-600'
   iconShape:string = 'rounded-full'
 
-  buttonClass:string = 'flex self-center border-2 pt-3 pl-3 pb-9 pr-9 text-2xl my-2 mx-1'
-  buttonBenchClass:string = 'flex self-center border-2 pt-2 pl-2 pb-7 pr-7 text-xl mb-2 mx-1 bg-blue-600 '
-  colorClass:string = 'flex self-center border-2 rounded-full p-4 text-2xl my-2 mx-1'
+  buttonClass:string = 'flex self-center border-2 pt-3 pl-3 pb-9 pr-9 text-2xl my-2 mx-1 cursor-pointer'
+  buttonBenchClass:string = 'flex self-center border-2 pt-2 pl-2 pb-7 pr-7 text-xl mb-2 mx-1 bg-blue-600 cursor-pointer'
+  colorClass:string = 'flex self-center border-2 rounded-full p-3 text-2xl my-2 mx-1 cursor-pointer'
 
   appDisplayClass:string = 'flex-wrap justify-center py-4 px-6 rounded-md drop-shadow-md'
   appDisplayStyle:string = 'flex'
