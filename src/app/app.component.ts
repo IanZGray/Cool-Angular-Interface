@@ -50,6 +50,7 @@ export class AppComponent {
 
   buttonArrayBench = ['heroChatBubbleLeftRightSolid', 'heroClockSolid', 'ionImage', 'heroMap']
 
+  backgroundImage = '../assets/auroroa.jpg'
 
   operateWindow() {
     if (this.displayToggle === 'hidden') {
