@@ -14,6 +14,10 @@ import { TodoComponent } from './todo/todo.component';
 import { FormsModule } from '@angular/forms';
 import { BrowserComponent } from './browser/browser.component';
 import { BankComponent } from './bank/bank.component';
+import { BgImageComponent } from './bgImage/bgImage.component';
+import { ClockComponent } from './clock/clock.component';
+import { MapsComponent } from './maps/maps.component';
+import { TextingComponent } from './texting/texting.component';
 
 @NgModule({
   declarations: [
@@ -22,6 +26,10 @@ import { BankComponent } from './bank/bank.component';
     TodoComponent,
     BrowserComponent,
     BankComponent,
+    BgImageComponent,
+    ClockComponent,
+    MapsComponent,
+    TextingComponent
   ],
   imports: [
     BrowserModule,
@@ -30,6 +38,6 @@ import { BankComponent } from './bank/bank.component';
     NgIconsModule.withIcons({ heroUsers, heroCurrencyDollarSolid, heroEnvelopeSolid, heroGlobeAltSolid, heroPlus, heroChatBubbleLeftRightSolid, heroClockSolid, heroSquaresPlus, heroMagnifyingGlassPlus,jamBatteryThreeQuartersF, heroChartBar, ionColorPalette, ionImage, heroMap, heroXCircle, ionCalculatorSharp, heroClipboardDocumentList, }),
   ],
   providers: [],
-  bootstrap: [AppComponent, CalcComponent, TodoComponent, BrowserComponent, BankComponent,  ]
+  bootstrap: [AppComponent, CalcComponent, TodoComponent, BrowserComponent, BankComponent, BgImageComponent, ClockComponent, MapsComponent, TextingComponent ]
 })
 export class AppModule { }

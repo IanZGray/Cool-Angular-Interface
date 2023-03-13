@@ -48,7 +48,7 @@ export class AppComponent {
 
   buttonArray = ['ionColorPalette', 'ionCalculatorSharp', 'heroClipboardDocumentList','heroEnvelopeSolid','heroCurrencyDollarSolid','heroGlobeAltSolid']
 
-  buttonArrayBench = ['heroChatBubbleLeftRightSolid','heroClockSolid','heroMagnifyingGlassPlus', 'heroUsers', 'ionImage', 'heroMap']
+  buttonArrayBench = ['heroChatBubbleLeftRightSolid', 'heroClockSolid', 'ionImage', 'heroMap']
 
 
   operateWindow() {
