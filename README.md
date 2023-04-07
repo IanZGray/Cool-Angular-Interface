@@ -7,7 +7,7 @@ Angular, TypeScript, Tailwind CSS
 
 ## Deployment
 
-Fork this folder where you have angular installed and run `ng serve` 
+https://jovial-sorbet-acad26.netlify.app/ 
 
 ## Future Changes
 
