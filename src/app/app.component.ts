@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { formatDate } from '@angular/common';
 
 @Component({
   selector: 'app-root',
@@ -30,6 +31,16 @@ export class AppComponent {
   currentTime = `
   ${this.hourCalc(this.d.getHours())}:${this.d.getMinutes()}`
   currentAmPm = ` ${this.amPmCalc(this.d.getHours())}`
+
+  today = new Date()
+  fullDate = ''
+  constructor() {
+    setInterval(() => {
+      this.today = new Date()
+      this.fullDate = formatDate(this.today, 'dd/MM/yy hh:mm a', 'en-US', undefined);
+    }, 1000)
+  }
+
 
   displayToggle:string = 'hidden'
   appDisplay:string = 'hidden'

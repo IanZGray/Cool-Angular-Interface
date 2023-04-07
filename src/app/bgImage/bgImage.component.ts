@@ -10,6 +10,8 @@ export class BgImageComponent {
   appDisplayStyle:string = 'flex'
   appHiddenStyle:string = 'none'
 
+  images = ['../../assets/auroroa.jpg']
+
   appWindowToggle(id:string) {
     let elm:any = document.getElementById(id);
     console.log(elm)
